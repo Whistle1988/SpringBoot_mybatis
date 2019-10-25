@@ -12,7 +12,7 @@
         <!--<property name="suppressAllComments" value="true"/>-->
         <!--</commentGenerator>-->
         <!--数据库链接URL，用户名、密码 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/muxin"
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/dataquery"
                         userId="root" password="root">
         </jdbcConnection>
         <!--<javaTypeResolver>-->
@@ -40,18 +40,18 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
-        <table tableName="my_friends" domainObjectName="MyFriendsDO" enableCountByExample="false"
+        <table tableName="trade_data" domainObjectName="TradeDataDO" enableCountByExample="false"
                enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false"></table>
-        <table tableName="users" domainObjectName="UsersDO" enableCountByExample="false"
-               enableUpdateByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <!--<table tableName="users" domainObjectName="UsersDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false"-->
+               <!--enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 
-        <table tableName="chat_msg" domainObjectName="ChatMsgDO" enableCountByExample="false"
-               enableUpdateByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" selectByExampleQueryId="false"></table>
-        <table tableName="friends_request" domainObjectName="FriendsRequestDO" enableCountByExample="false"
-            enableUpdateByExample="false" enableDeleteByExample="false"
-            enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <!--<table tableName="chat_msg" domainObjectName="ChatMsgDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false"-->
+               <!--enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="friends_request" domainObjectName="FriendsRequestDO" enableCountByExample="false"-->
+            <!--enableUpdateByExample="false" enableDeleteByExample="false"-->
+            <!--enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
     </context>
 </generatorConfiguration>
